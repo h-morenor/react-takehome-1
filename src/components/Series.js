@@ -1,26 +1,26 @@
 import React from 'react';
 
-export default function Series({movies, links}) {
+export default function Series({series, linksSeries}) {
 
 
   return (
 
-  movies.map((movie, index) => {
+  series.map((serie, index) => {
   
-    if(movie.programType = "series"){
+    if(serie.programType = "series"){
 
   return(
         <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src={links[index]} alt="" /></figure>
+  <figure><img src={linksSeries[index]} alt="" /></figure>
   <div className="card-body">
     <h2 className="card-title">
-      {movie.title}
+      {serie.title}
       
     </h2>
-    <p>{movie.description}</p>
+    <p>{serie.description}</p>
     <div className="card-actions justify-end">
-      <div className="badge badge-outline">{movie.programType}</div> 
-      <div className="badge badge-outline">{movie.releaseYear}</div>
+      <div className="badge badge-outline">{serie.programType}</div> 
+      <div className="badge badge-outline">{serie.releaseYear}</div>
     </div>
   </div>
 </div>
