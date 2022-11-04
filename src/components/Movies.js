@@ -7,8 +7,8 @@ export default function Movies({movies, links}) {
   movies.map((movie, index) => {
   
     if(movie.programType = "movies"){
-console.log(movie.programType)
-  return(
+    //console.log(index)
+    return(
         <div className="card w-96 bg-base-100 shadow-xl">
   <figure><img src={links[index]} alt="" /></figure>
   <div className="card-body">
